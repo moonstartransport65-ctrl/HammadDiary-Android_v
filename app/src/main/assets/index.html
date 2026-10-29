@@ -1320,10 +1320,15 @@ Promise.race([fontReady, new Promise(function(r){ setTimeout(r, 2500); })]).then
 'use strict';
 var $ = function(id){ return document.getElementById(id); };
 var BUILTIN = [
-  {id:'b1', t:'Twinkle Twinkle Little Star', l:'en-IN', x:'Twinkle, twinkle, little star,\nHow I wonder what you are!\nUp above the world so high,\nLike a diamond in the sky.\nTwinkle, twinkle, little star,\nHow I wonder what you are!'},
-  {id:'b2', t:'مچھلی جل کی رانی ہے', l:'ur-PK', x:'مچھلی جل کی رانی ہے\nجیون اس کا پانی ہے\nہاتھ لگاؤ ڈر جائے گی\nباہر نکالو مر جائے گی'},
-  {id:'b3', t:'Johny Johny Yes Papa', l:'en-IN', x:'Johny Johny, yes papa?\nEating sugar? No papa.\nTelling lies? No papa.\nOpen your mouth. Ha ha ha!'},
-  {id:'b4', t:'لب پہ آتی ہے دعا', l:'ur-PK', x:'لب پہ آتی ہے دعا بن کے تمنا میری\nزندگی شمع کی صورت ہو خدایا میری\nدور دنیا کا مرے دم سے اندھیرا ہو جائے\nہر جگہ میرے چمکنے سے اجالا ہو جائے'}
+{id:'b1', t:'Twinkle Twinkle Little Star', l:'en-IN', x:'Twinkle, twinkle, little star,\nHow I wonder what you are!\nUp above the world so high,\nLike a diamond in the sky.\nTwinkle, twinkle, little star,\nHow I wonder what you are!'},
+{id:'b2', t:'مچھلی جل کی رانی ہے', l:'ur-PK', x:'مچھلی جل کی رانی ہے\nজীবন اس کا پانی ہے\nہاتھ لگاؤ تو ڈر جائے گی\nباہر نکالو تو مر جائے گی'},
+{id:'b3', t:'Johny Johny Yes Papa', l:'en-IN', x:'Johny Johny, yes papa?\nNo papa.\nOpen your mouth.\nHa ha ha!'},
+{id:'b4', t:'Rain, rain, go away', l:'en-IN', x:'Rain, rain, go away,\nCome again another day.\nLittle child wants to play,\nCome again another day!'},
+{id:'b5', t:'لب پہ آتی ہے دعا', l:'ur-PK', x:'لب پہ آتی ہے دعا بن کے تمنا میری\nزندگی شمع کی صورت ہو خدايا میری!\nدور دنیا کا میرے دم سے اندھیرا ہو جانے!\nہر جگہ میرے چمکنے سے اجالا ہو جائے!'},
+{id:'b6', t:'آلو میاں آلو میاں', l:'ur-PK', x:'آلو میاں، آلو میاں کہاں گئے تھے؟\nبینگن کی ٹوکری میں سو رہے تھے!\nبینگن نے لات ماری، رو رہے تھے!\nامی نے پیسے دیے، ناچ رہے تھے!'},
+{id:'b7', t:'بلبل کا بچہ (مکمل نظم)', l:'ur-PK', x:'بلبل کا بچہ، کھاتا تھا کھچڑی\nپیتا تھا پانی\nایک دن اڑا، واپس نہ آیا\nاماں نے پکارا، واپس نہ آ!'},
+{id:'b8', t:'بلی میں نے بالی ہے', l:'ur-PK', x:'ببلی میں نے بالی ہے\nسر سے دم تک کالی ہے\nآنکھیں کیا چمکتی ہیں!\nبستر پر چڑھ جاتی ہے\nدھیرے سے کہتی ہے:\nمیاؤں میاؤں!'},
+{id:'b9', t:'My best friend', l:'en-IN', x:'My best friend is kind and fun,\nWe play outside in the bright sun.\nWe share our toys and run around,\nAnd make the silliest kind of sound.\nYou help me smile through every day,\nI\'m glad that you are mine to stay!'}
 ];
 var mine = [];
 try { mine = JSON.parse(localStorage.getItem('nq-poems') || '[]') || []; } catch(e) { mine = []; }
