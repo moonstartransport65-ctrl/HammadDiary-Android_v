@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">حماد احمد بٹ کی ڈائری</string>
+    <string name="mic_title">مائیک کی اجازت</string>
+    <string name="mic_msg">یہ ایپ آپ سے مائیک استعمال کرنے کی اجازت مانگ رہی ہے، تاکہ بچہ نظمیں اور حروف اپنی آواز میں خود ریکارڈ کر سکے۔ اگلی اسکرین پر \"اجازت دیں\" دبائیں۔</string>
+    <string name="mic_ok">ٹھیک ہے</string>
+    <string name="mic_no">نہیں</string>
+    <string name="mic_settings_msg">فون نے مائیک کی اجازت بند کر رکھی ہے۔ نیچے والا بٹن دبائیں، پھر "Permissions" میں "Microphone" پر ٹیپ کر کے "Allow" چنیں۔</string>
+    <string name="mic_settings_btn">اجازت کھولیں</string>
 </resources>
